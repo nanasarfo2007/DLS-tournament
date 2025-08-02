@@ -1,0 +1,115 @@
+:root {
+  --bg:#0f111a;
+  --card:#1f2233;
+  --text:#f5f5f8;
+  --accent:#ffcc00;
+  --radius:12px;
+  font-family: "Segoe UI", system-ui,-apple-system,sans-serif;
+}
+*{box-sizing:border-box;}
+body {
+  margin:0;
+  background: linear-gradient(135deg,#0f111a 0%,#1b1f38 70%);
+  color: var(--text);
+  min-height:100vh;
+  padding:1rem;
+}
+h1 {text-align:center; margin-bottom:8px; letter-spacing:1px;}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  gap:1.5rem;
+  grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+}
+.group-card {
+  background: var(--card);
+  padding:1rem 1.25rem;
+  border-radius: var(--radius);
+  position: relative;
+  overflow:hidden;
+  box-shadow: 0 20px 40px -10px rgba(0,0,0,0.5);
+}
+.group-card h2 {
+  margin-top:0;
+  font-size:1.2rem;
+  letter-spacing:1px;
+}
+table {
+  width:100%;
+  border-collapse: collapse;
+  margin-top:6px;
+  font-size:0.85rem;
+}
+thead th {
+  border-bottom:2px solid rgba(255,255,255,0.15);
+  padding:6px 4px;
+  text-align:left;
+  font-weight:600;
+}
+tbody tr {
+  transition: background .2s;
+}
+tbody tr:hover {
+  background: rgba(255,255,255,0.05);
+}
+td {
+  padding:6px 4px;
+}
+.pos {width:28px;}
+.team {min-width:120px;}
+.points {font-weight:700;}
+.form-area {
+  background: var(--card);
+  padding:1rem 1.25rem;
+  border-radius: var(--radius);
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  align-items:flex-end;
+  margin-bottom:1rem;
+}
+.form-area label {
+  display:block;
+  font-size:0.6rem;
+  margin-bottom:4px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  opacity:.9;
+}
+.form-group {
+  display:flex;
+  flex-direction:column;
+  flex:1 1 180px;
+  min-width:120px;
+}
+select, input {
+  padding:8px 10px;
+  border-radius:8px;
+  border:1px solid rgba(255,255,255,0.1);
+  background: #0f111a;
+  color: var(--text);
+  font-size:0.9rem;
+  outline:none;
+}
+button {
+  background: var(--accent);
+  border:none;
+  padding:12px 18px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+  color:#0f111a;
+  flex:0 0 auto;
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+}
+.small {font-size:0.6rem; opacity:.7;}
+.reset {
+  background: transparent;
+  border:1px solid var(--text);
+  color: var(--text);
+  margin-left: auto;
+  font-size:0.8rem;
+}

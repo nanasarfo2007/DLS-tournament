@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DLS TOURNAMENT</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- link to CSS in same directory -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>DLS TOURNAMENT</h1>
+
+  <div class="form-area">
+    <div class="form-group">
+      <label for="groupSelect">Group</label>
+      <select id="groupSelect">
+        <option value="A">Group A</option>
+        <option value="B">Group B</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="team1">Team 1</label>
+      <select id="team1"></select>
+    </div>
+    <div class="form-group">
+      <label for="score1">Score 1</label>
+      <input type="number" id="score1" min="0" value="0" />
+    </div>
+    <div class="form-group">
+      <label for="team2">Team 2</label>
+      <select id="team2"></select>
+    </div>
+    <div class="form-group">
+      <label for="score2">Score 2</label>
+      <input type="number" id="score2" min="0" value="0" />
+    </div>
+    <button id="addResultBtn">Add Result</button>
+    <button id="resetBtn" class="reset">Reset All</button>
+  </div>
+
+  <div class="container">
+    <div class="group-card" id="groupAcard">
+      <h2>Group A</h2>
+      <div class="small">Teams: NBA...Baddest, Juicewrld, Nana Sarfo, Evans</div>
+      <div id="tableA"></div>
+    </div>
+    <div class="group-card" id="groupBcard">
+      <h2>Group B</h2>
+      <div class="small">Teams: WAGASTY, TKB Malone😎, 🥶GodFather_swg😠, ISODAYS</div>
+      <div id="tableB"></div>
+    </div>
+  </div>
+
+  <!-- link to JS in same directory -->
+  <script src="script.js"></script>
+</body>
+</html>
